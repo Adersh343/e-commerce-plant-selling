@@ -1,7 +1,7 @@
 import React from "react";
 import logo from "../assets/icons/logo.svg";
 import search from "../assets/icons/search.svg";
-import Button from "./Button";
+import CustomButton from "./CustomButton";
 
 const Navbar = () => {
   return (
@@ -28,7 +28,7 @@ const Navbar = () => {
             <img className=" w-7" src={search} />
           </div>
           <div>Add to cart</div>
-          <div><Button/></div>
+          <div><CustomButton/></div>
         </div>
       </div>
     </div>

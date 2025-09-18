@@ -1,27 +1,34 @@
-import React from 'react'
-import hero from '../assets/images/hero.png'
+import React from "react";
+import hero from "../assets/images/hero.png";
+import Button from "../components/CustomButton";
+import CustomButton from "../components/CustomButton";
 const Home = () => {
-    return (
-        <div className="bg-[#EDF8EA] flex  justify-around  pt-20">
-            <div className=" ">
-                <h1  className='text-5xl  font-bold '>Give Life To<br/>
-                    Your Home
-                </h1>
-                <p className='text-xl pt-7'>
-                    Lorem ipsun hiusaeryuw gbusyduywae  <br/>uysadoi  iuhuadcd hiuasdc
-                </p>
-                <div className=" pt-7">
-                
-                <button className='bg-green-700 text-white font-medium w-25 h-10 rounded-xl' >Shop Now</button>
-                </div>
+  return (
+    <div className="bg-greenbg pb-16 flex    pt-20">
+        <div className=" flex justify-between container mx-auto">
+            
+      <div className="flex flex-col gap-3">
+        <h1 className="text-8xl text-primary  font-bold ">
+          Give Life To
+          <br />
+          Your Home
+        </h1>
+        <p className="text-xl pt-7">
+          Lorem ipsun hiusaeryuw gbusyduywae <br />
+          uysadoi iuhuadcd hiuasdc
+        </p>
 
-            </div>
 
-            <div className="">
-               <img  src={hero} />
-            </div>
+        <CustomButton />
+      
+      </div>
+
+      <div className="">
+        <img width={314} height={393} src={hero} />
+      </div>
         </div>
-    )
-}
+    </div>
+  );
+};
 
-export default Home
+export default Home;
