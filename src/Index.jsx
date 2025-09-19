@@ -1,18 +1,22 @@
 import React from "react";
+import PopularPlants from "./components/landing_components/PopularPlants";
 import Navbar from "./components/Navbar";
 import Home from "./pages/LandingPage";
 import ShopPage from "./components/landing_components/ShopByCate";
 import About from "./components/landing_components/WhyChooseUs";
-import Index from "./Index";
 
-const App = () => {
+const Index = () => {
   return (
     <div>
-      {/* sco = search engine optimisation */}
-
-      <Index />
+     
+      <Navbar />
+      <Home />
+      <ShopPage />
+      <About />
+      <PopularPlants/>
+      
     </div>
   );
 };
 
-export default App;
+export default Index;
