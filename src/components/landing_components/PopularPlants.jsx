@@ -3,6 +3,7 @@ import PlantCard from "../PlantCard";
 import CustomHeading from "../CustomHeading";
 import img from '../../assets/images/hero.png'
 
+// from pritam branch 
 
 const PopularPlants = () => {
   const plantList = [
