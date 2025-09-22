@@ -9,7 +9,7 @@ const App = () => {
   return (
     <div>
       {/* sco = search engine optimisation */}
-
+{/* sdfsdf */}
       <Index />
     </div>
   );
