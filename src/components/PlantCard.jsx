@@ -4,9 +4,9 @@ const PlantCard = ({title,price,image}) => {
   return (
     <div>
   
-      <img width={248} height={341} src={image}/>
-      <h2>{title}</h2>
-      <span>₹{price}</span>
+      <img width={250} height={150} src={image}/>
+      <h2 className='text-xl font-medium text-primary'>{title}</h2>
+      <span className='text-xl font-medium text-primary'>₹{price}</span>
 
     </div>
   )

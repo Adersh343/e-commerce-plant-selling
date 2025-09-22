@@ -7,7 +7,7 @@ import CustomHeading from "../CustomHeading";
 const About = () => {
   return (
     <div className="container mx-auto  pt-20">
-      <div className=" bg-greenbg  pt-20  flex justify-around">
+      <div className=" bg-greenbg  pt-20  flex justify-around h-170">
         <div className="">
           <img src={about} />
         </div>

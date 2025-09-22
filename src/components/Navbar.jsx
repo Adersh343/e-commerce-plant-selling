@@ -28,7 +28,7 @@ const Navbar = () => {
             <img className=" w-7" src={search} />
           </div>
           <div>Add to cart</div>
-          <div><CustomButton/></div>
+          <div><CustomButton title='Login'/></div>
         </div>
       </div>
     </div>

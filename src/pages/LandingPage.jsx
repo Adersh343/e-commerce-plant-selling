@@ -19,7 +19,7 @@ const Home = () => {
         </p>
 
 
-        <CustomButton />
+        <CustomButton  title="Shop Now"/>
       
       </div>
 
