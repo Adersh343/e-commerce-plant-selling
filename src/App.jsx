@@ -1,17 +1,24 @@
 import React from "react";
-import Navbar from "./components/Navbar";
-import Home from "./pages/LandingPage";
-import ShopPage from "./components/landing_components/ShopByCate";
-import About from "./components/landing_components/WhyChooseUs";
 import Index from "./Index";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import AuthRoutes from "./routes/AuthRoutes";
+import MainLayout from "./layouts/MainLayout";
+
+// Browser router
+// routes
+// route
 
 const App = () => {
   return (
-    <div>
-      {/* sco = search engine optimisation */}
+    <BrowserRouter>
+      <Routes>
+        <Route element={<MainLayout/>}>
+          <Route path="/" element={<Index />} />
+        </Route>
 
-      <Index />
-    </div>
+        <Route path="/auth/*" element={<AuthRoutes />} />
+      </Routes>
+    </BrowserRouter>
   );
 };
 

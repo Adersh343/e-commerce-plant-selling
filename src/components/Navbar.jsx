@@ -2,8 +2,10 @@ import React from "react";
 import logo from "../assets/icons/logo.svg";
 import search from "../assets/icons/search.svg";
 import CustomButton from "./CustomButton";
+import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
+  const navigate = useNavigate();
   return (
     <div className="bg-[#EDF8EA]">
       <div className="flex justify-between items-center container mx-auto">
@@ -28,7 +30,7 @@ const Navbar = () => {
             <img className=" w-7" src={search} />
           </div>
           <div>Add to cart</div>
-          <div><CustomButton title='Login'/></div>
+          <div><CustomButton onClick={()=>navigate("/auth/login")} title='Login'/></div>
         </div>
       </div>
     </div>

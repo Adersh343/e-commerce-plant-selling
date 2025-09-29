@@ -11,18 +11,10 @@ import SingupPage from "./pages/SingupPage";
 const Index = () => {
   return (
     <div>
-     
-      <Navbar />
       <Home />
       <ShopPage />
       <About />
       <PopularPlants/>
-
-      <Footer/>
-
-      <LoginPage/>
-      <SingupPage/>
-      
     </div>
   );
 };
